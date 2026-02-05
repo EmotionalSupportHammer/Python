@@ -1,0 +1,84 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html>
+<lang="en">
+<link rel="stylesheet" href="styles.css">
+<title>How many cows can I beat</title>
+<h1 id="title">Cows!</h1>
+  <p id="description">They go MOOOO!</p>
+  <form id="survey-form">
+    <div class="Questions>">
+    <!-- name -->
+    <label id="name-label" for="name">Who dares chalange the cows!?</label><input type="text" id="name" required placeholder="name or alias/fake name"/> <br />
+
+    <!-- email -->
+    <br />
+    <label id="email-label" for="email">Give me (defietly not a cow in a trench coat) your email</label>
+    <input type="email" id="email" required placeholder="email give it pls :)"/><br />
+
+    <!-- number -->
+    <label id="number-label">How many cows could you take in a fight?</label>
+    <input type="number" id="number" pattern="[0-9]+" placeholder="numbers only" min="0" max="1000000"/><br />
+    <!--Question -->
+    <label for="dropdown">What would to give to the cows to make it a fair fight</label>
+    <select id="dropdown">
+      <option value=0>defult</option>
+      <option value="1">nothing (coward)</option>
+      <option value="2">A sheep with a tophat named greg.</option>
+      <option value="3">A chainsaw (they know how to use it)</option>
+      <option value="4">A katana (only 1 has it and is useing it)</option>
+    </select>
+    <br />
+    <!-- raido -->
+    <label id="raido-label">Are you lying to me? (if you are I will send the cows)</label>
+    <input type="radio" name="q2" value="1">Yes I am</input>
+    <input type="radio" style="cursor: not-allowed;" name="q2" value="0"><span style="cursor: not-allowed;">What no why would I be lying?</span></input><br />
+  <!-- textarea -->
+    <label for="plea_for_mercy.">Is their anything you wish to tell the cows before they arive?</label>
+    <textarea type="textarea" id="plea_for_mercy."></textarea><br />
+    <input type="checkbox" required name="moo" value="GO">Are you ready to fight the cows?</input>
+    <!-- checkbox -->
+
+    <input type="checkbox" name="moo" value="boo">Has prepared very bad cow and/or dairy jokes.</input>
+    <!-- send -->
+    <input type="submit" value="Send the cows." id="submit" />
+    
+  </form>
+  </div>
+
+
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+#title, #description {
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+label, input{
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#number{
+  min-width: 6.3rem;
+}
+#submit:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+form{
+  text-align: center;
+}
+
+** end of styles.css **
+
